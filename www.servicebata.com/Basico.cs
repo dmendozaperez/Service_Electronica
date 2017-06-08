@@ -179,7 +179,10 @@ namespace www.servicebata.com
                         case "08":
                             _codigo_ruta = "02";
                             break;
-
+                        case "20":
+                            /*RETENCIONES*/
+                            _codigo_ruta = "05";
+                            break;
                     }
                 }
                 else
@@ -198,7 +201,10 @@ namespace www.servicebata.com
                         case "08":
                             _codigo_ruta = "04";
                             break;
-
+                        case "20":
+                            /*RETENCIONES*/
+                            _codigo_ruta = "05";
+                            break;
                     }
                 }
                 #endregion
@@ -271,7 +277,9 @@ namespace www.servicebata.com
                     case "08":
                         _codigo_ruta = "02";
                         break;
-
+                    case "20":
+                        _codigo_ruta = "05";
+                        break;
                 }
 
                 DataSet dsruta = _retorna_tabla_ruta(_codigo_ruta);
@@ -285,10 +293,10 @@ namespace www.servicebata.com
 
                     for (Int32 i = 0; i < dt_ruta.Rows.Count; ++i)
                     {
-                        string _ruta_carpeta = dt_ruta.Rows[i]["ruta_xml"].ToString() + "\\Desarrollo\\";
+                        string _ruta_carpeta = dt_ruta.Rows[i]["rut_des"].ToString() + "\\";
                         //        //creando la carpeta de la tienda                    
 
-                        NetworkShare.ConnectToShare(@dt_ruta.Rows[i]["ruta_xml"].ToString() + "\\Desarrollo", _user, _contraseña);
+                        NetworkShare.ConnectToShare(@dt_ruta.Rows[i]["rut_des"].ToString() + "\\", _user, _contraseña);
 
 
                         _archivo_ruta = _ruta_carpeta + "\\" + _tienda_archivo + ".xml";

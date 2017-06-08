@@ -26,9 +26,9 @@ namespace www.servicebata.com
             string valida = "";
             try
             {
-                //valida = Basico.exportar_archivo_xml_desarrollo(_archivo_xml, _name);
+                valida = Basico.exportar_archivo_xml_desarrollo(_archivo_xml, _name);
 
-                valida = "XXXX";
+                //valida = "XXXX";
 
             }
             catch (Exception exc)
@@ -53,7 +53,7 @@ namespace www.servicebata.com
             else
             {
 
-                _error_codigo = "0";
+                _error_codigo = valida;
                 _mensaje = valida;
                 //_respuesta[0] = _error_codigo.ToString();
                 //_respuesta[1] = _mensaje.ToString();

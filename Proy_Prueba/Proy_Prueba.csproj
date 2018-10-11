@@ -82,7 +82,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="Service References\ServiceBata\ws_bata.wsdl" />
+    <None Include="Service References\ServiceBata\ws_bata1.wsdl" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -112,7 +112,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\ServiceBata\ws_bata.disco" />
+    <None Include="Service References\ServiceBata\ws_bata1.disco" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

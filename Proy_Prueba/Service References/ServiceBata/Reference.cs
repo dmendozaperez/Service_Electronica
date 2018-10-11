@@ -30,6 +30,10 @@ namespace Proy_Prueba.ServiceBata {
         // CODEGEN: Se está generando un contrato de mensaje, ya que el nombre de elemento _archivo del espacio de nombres http://tempuri.org/ no está marcado para aceptar valores nil.
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ws_control_error", ReplyAction="*")]
         Proy_Prueba.ServiceBata.ws_control_errorResponse ws_control_error(Proy_Prueba.ServiceBata.ws_control_errorRequest request);
+        
+        // CODEGEN: Se está generando un contrato de mensaje, ya que el nombre de elemento _tipo del espacio de nombres http://tempuri.org/ no está marcado para aceptar valores nil.
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ws_genera_pdf_bytes", ReplyAction="*")]
+        Proy_Prueba.ServiceBata.ws_genera_pdf_bytesResponse ws_genera_pdf_bytes(Proy_Prueba.ServiceBata.ws_genera_pdf_bytesRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -328,6 +332,86 @@ namespace Proy_Prueba.ServiceBata {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class ws_genera_pdf_bytesRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="ws_genera_pdf_bytes", Namespace="http://tempuri.org/", Order=0)]
+        public Proy_Prueba.ServiceBata.ws_genera_pdf_bytesRequestBody Body;
+        
+        public ws_genera_pdf_bytesRequest() {
+        }
+        
+        public ws_genera_pdf_bytesRequest(Proy_Prueba.ServiceBata.ws_genera_pdf_bytesRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class ws_genera_pdf_bytesRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string _tipo;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public string _serie;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public string _num_ini;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
+        public string _num_fin;
+        
+        public ws_genera_pdf_bytesRequestBody() {
+        }
+        
+        public ws_genera_pdf_bytesRequestBody(string _tipo, string _serie, string _num_ini, string _num_fin) {
+            this._tipo = _tipo;
+            this._serie = _serie;
+            this._num_ini = _num_ini;
+            this._num_fin = _num_fin;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class ws_genera_pdf_bytesResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="ws_genera_pdf_bytesResponse", Namespace="http://tempuri.org/", Order=0)]
+        public Proy_Prueba.ServiceBata.ws_genera_pdf_bytesResponseBody Body;
+        
+        public ws_genera_pdf_bytesResponse() {
+        }
+        
+        public ws_genera_pdf_bytesResponse(Proy_Prueba.ServiceBata.ws_genera_pdf_bytesResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class ws_genera_pdf_bytesResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public byte[] ws_genera_pdf_bytesResult;
+        
+        public ws_genera_pdf_bytesResponseBody() {
+        }
+        
+        public ws_genera_pdf_bytesResponseBody(byte[] ws_genera_pdf_bytesResult) {
+            this.ws_genera_pdf_bytesResult = ws_genera_pdf_bytesResult;
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public interface ws_bataSoapChannel : Proy_Prueba.ServiceBata.ws_bataSoap, System.ServiceModel.IClientChannel {
     }
@@ -411,6 +495,22 @@ namespace Proy_Prueba.ServiceBata {
             inValue.Body._error = _error;
             Proy_Prueba.ServiceBata.ws_control_errorResponse retVal = ((Proy_Prueba.ServiceBata.ws_bataSoap)(this)).ws_control_error(inValue);
             return retVal.Body.ws_control_errorResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Proy_Prueba.ServiceBata.ws_genera_pdf_bytesResponse Proy_Prueba.ServiceBata.ws_bataSoap.ws_genera_pdf_bytes(Proy_Prueba.ServiceBata.ws_genera_pdf_bytesRequest request) {
+            return base.Channel.ws_genera_pdf_bytes(request);
+        }
+        
+        public byte[] ws_genera_pdf_bytes(string _tipo, string _serie, string _num_ini, string _num_fin) {
+            Proy_Prueba.ServiceBata.ws_genera_pdf_bytesRequest inValue = new Proy_Prueba.ServiceBata.ws_genera_pdf_bytesRequest();
+            inValue.Body = new Proy_Prueba.ServiceBata.ws_genera_pdf_bytesRequestBody();
+            inValue.Body._tipo = _tipo;
+            inValue.Body._serie = _serie;
+            inValue.Body._num_ini = _num_ini;
+            inValue.Body._num_fin = _num_fin;
+            Proy_Prueba.ServiceBata.ws_genera_pdf_bytesResponse retVal = ((Proy_Prueba.ServiceBata.ws_bataSoap)(this)).ws_genera_pdf_bytes(inValue);
+            return retVal.Body.ws_genera_pdf_bytesResult;
         }
     }
 }

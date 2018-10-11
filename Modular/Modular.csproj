@@ -55,7 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="Service References\ServiceBata\ws_bata.wsdl" />
+    <None Include="Service References\ServiceBata\ws_bata1.wsdl" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\ServiceBata\" />
@@ -73,7 +73,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\ServiceBata\ws_bata.disco" />
+    <None Include="Service References\ServiceBata\ws_bata1.disco" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

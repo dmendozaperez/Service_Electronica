@@ -39,7 +39,22 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bata.FEPE.TemplateEngine">
+      <HintPath>..\..\..\Generador PDF\Genera PDF\BataGeneraPDF\BataGeneraPDF\bin\Debug\Bata.FEPE.TemplateEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="Bata.FEPE.TemplateEngine.ABCpdf">
+      <HintPath>..\..\..\Generador PDF\Genera PDF\BataGeneraPDF\BataGeneraPDF\bin\Debug\Bata.FEPE.TemplateEngine.ABCpdf.dll</HintPath>
+    </Reference>
+    <Reference Include="Bata.FEPE.TemplateEngine.PDF417Lib">
+      <HintPath>..\..\..\Generador PDF\Genera PDF\BataGeneraPDF\BataGeneraPDF\bin\Debug\Bata.FEPE.TemplateEngine.PDF417Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Common">
+      <HintPath>..\..\..\Generador PDF\Genera PDF\BataGeneraPDF\BataGeneraPDF\bin\Debug\Common.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="NReco.PdfGenerator">
+      <HintPath>..\..\..\Generador PDF\Genera PDF\BataGeneraPDF\BataGeneraPDF\bin\Debug\NReco.PdfGenerator.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -67,8 +82,42 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ReferenceData\INEI.xslt" />
+    <Content Include="ReferenceData\INEI_Departamentos.xml" />
+    <Content Include="ReferenceData\INEI_Distritos.xml" />
+    <Content Include="ReferenceData\INEI_Provincias.xml" />
+    <Content Include="ReferenceData\ISO.xslt" />
+    <Content Include="ReferenceData\ISO3166.xml" />
+    <Content Include="ReferenceData\ISO4217.xml" />
+    <Content Include="ReferenceData\SUNAT_DOCUMENTOS.xslt" />
+    <Content Include="ReferenceData\SUNAT_TRIBUTOS.xslt" />
+    <Content Include="ReferenceData\SUNAT_T_Afectacion_IGV.xml" />
+    <Content Include="ReferenceData\SUNAT_T_Documentos.xml" />
+    <Content Include="ReferenceData\SUNAT_T_Documentos_Identidad.xml" />
+    <Content Include="ReferenceData\SUNAT_T_Documentos_Relacionados.xml" />
+    <Content Include="ReferenceData\SUNAT_T_Elementos_Adicionales.xml" />
+    <Content Include="ReferenceData\SUNAT_T_Notas.xml" />
+    <Content Include="ReferenceData\SUNAT_T_Otros_Conceptos_Tributarios.xml" />
+    <Content Include="ReferenceData\SUNAT_T_Precio_Venta.xml" />
+    <Content Include="ReferenceData\SUNAT_T_Sis_Calculo_ISC.xml" />
+    <Content Include="ReferenceData\SUNAT_T_Tributos.xml" />
+    <Content Include="ReferenceData\SUNAT_T_Valor_Venta.xml" />
+    <Content Include="ReferenceData\UBL.xslt" />
+    <Content Include="ReferenceData\UBL_T_Categorias_Tributos.xml" />
+    <Content Include="ReferenceData\UBL_T_Descuentos_Cargos.xml" />
+    <Content Include="ReferenceData\UNECE.xslt" />
+    <Content Include="ReferenceData\UNECE_T_Unidad_Medida.xml" />
     <Content Include="Web.config" />
     <Content Include="ws_bata.asmx" />
+    <Content Include="XSLT\BO.xslt" />
+    <Content Include="XSLT\BO_BO.xslt" />
+    <Content Include="XSLT\FA.xslt" />
+    <Content Include="XSLT\FA_FA.xslt" />
+    <Content Include="XSLT\NC.xslt" />
+    <Content Include="XSLT\NC_NC.xslt" />
+    <Content Include="XSLT\ND.xslt" />
+    <Content Include="XSLT\ND_ND.xslt" />
+    <Content Include="XSLT\RE_RE.xslt" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Basico.cs" />

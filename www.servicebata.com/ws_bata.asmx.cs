@@ -201,5 +201,31 @@ namespace www.servicebata.com
 
             return _respuesta;
         }
-    }
+        #region<Generacion de pdf electronico>
+        [WebMethod]
+        public Byte[] ws_genera_pdf_bytes(String _tipo,string _serie,string _num_ini,string _num_fin)
+        {
+            Byte[] ws = null;
+            try
+            {
+                ws = Basico.get_pdf(_tipo,_serie, Convert.ToDecimal(_num_ini),Convert.ToDecimal(_num_fin));
+            }
+            catch
+            {                
+                ws = null;
+            }
+
+            if (ws == null)
+            {             
+                String abc = "0";
+                byte[] numbers = System.Text.Encoding.ASCII.GetBytes(abc);
+                ws = numbers;
+
+            }
+
+            return ws;
+
+        }
+            #endregion
+      }
 }

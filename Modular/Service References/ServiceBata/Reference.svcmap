@@ -18,11 +18,11 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:1995/ws_bata.asmx" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://10.10.10.208/web_site_electronica/ws_bata.asmx" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="ws_bata.wsdl" MetadataType="Wsdl" ID="51b821fc-1a7d-40dd-b230-54fa0c13f22e" SourceId="1" SourceUrl="http://localhost:1995/ws_bata.asmx?wsdl" />
-    <MetadataFile FileName="ws_bata.disco" MetadataType="Disco" ID="2c5d056f-93fe-41a9-a48f-af20cfa7804c" SourceId="1" SourceUrl="http://localhost:1995/ws_bata.asmx?disco" />
+    <MetadataFile FileName="ws_bata1.disco" MetadataType="Disco" ID="920b51b0-0e02-454d-8361-cb960ac10b44" SourceId="1" SourceUrl="http://10.10.10.208/web_site_electronica/ws_bata.asmx?disco" />
+    <MetadataFile FileName="ws_bata1.wsdl" MetadataType="Wsdl" ID="ea7ddb9d-5b55-4eb3-a5ab-34e4ff897efd" SourceId="1" SourceUrl="http://10.10.10.208/web_site_electronica/ws_bata.asmx?wsdl" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

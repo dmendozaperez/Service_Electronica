@@ -20,12 +20,20 @@ namespace Modular.ServiceBata {
         Modular.ServiceBata.ws_envio_xml_desarrolloResponse ws_envio_xml_desarrollo(Modular.ServiceBata.ws_envio_xml_desarrolloRequest request);
         
         // CODEGEN: Se está generando un contrato de mensaje, ya que el nombre de elemento _archivo_xml del espacio de nombres http://tempuri.org/ no está marcado para aceptar valores nil.
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ws_envio_xml_tropi", ReplyAction="*")]
+        Modular.ServiceBata.ws_envio_xml_tropiResponse ws_envio_xml_tropi(Modular.ServiceBata.ws_envio_xml_tropiRequest request);
+        
+        // CODEGEN: Se está generando un contrato de mensaje, ya que el nombre de elemento _archivo_xml del espacio de nombres http://tempuri.org/ no está marcado para aceptar valores nil.
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ws_envio_xml", ReplyAction="*")]
         Modular.ServiceBata.ws_envio_xmlResponse ws_envio_xml(Modular.ServiceBata.ws_envio_xmlRequest request);
         
         // CODEGEN: Se está generando un contrato de mensaje, ya que el nombre de elemento _archivo del espacio de nombres http://tempuri.org/ no está marcado para aceptar valores nil.
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ws_control_error", ReplyAction="*")]
         Modular.ServiceBata.ws_control_errorResponse ws_control_error(Modular.ServiceBata.ws_control_errorRequest request);
+        
+        // CODEGEN: Se está generando un contrato de mensaje, ya que el nombre de elemento _tipo del espacio de nombres http://tempuri.org/ no está marcado para aceptar valores nil.
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ws_genera_pdf_bytes", ReplyAction="*")]
+        Modular.ServiceBata.ws_genera_pdf_bytesResponse ws_genera_pdf_bytes(Modular.ServiceBata.ws_genera_pdf_bytesRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -97,6 +105,78 @@ namespace Modular.ServiceBata {
         
         public ws_envio_xml_desarrolloResponseBody(string ws_envio_xml_desarrolloResult) {
             this.ws_envio_xml_desarrolloResult = ws_envio_xml_desarrolloResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class ws_envio_xml_tropiRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="ws_envio_xml_tropi", Namespace="http://tempuri.org/", Order=0)]
+        public Modular.ServiceBata.ws_envio_xml_tropiRequestBody Body;
+        
+        public ws_envio_xml_tropiRequest() {
+        }
+        
+        public ws_envio_xml_tropiRequest(Modular.ServiceBata.ws_envio_xml_tropiRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class ws_envio_xml_tropiRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public byte[] _archivo_xml;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public string _name;
+        
+        public ws_envio_xml_tropiRequestBody() {
+        }
+        
+        public ws_envio_xml_tropiRequestBody(byte[] _archivo_xml, string _name) {
+            this._archivo_xml = _archivo_xml;
+            this._name = _name;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class ws_envio_xml_tropiResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="ws_envio_xml_tropiResponse", Namespace="http://tempuri.org/", Order=0)]
+        public Modular.ServiceBata.ws_envio_xml_tropiResponseBody Body;
+        
+        public ws_envio_xml_tropiResponse() {
+        }
+        
+        public ws_envio_xml_tropiResponse(Modular.ServiceBata.ws_envio_xml_tropiResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class ws_envio_xml_tropiResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string ws_envio_xml_tropiResult;
+        
+        public ws_envio_xml_tropiResponseBody() {
+        }
+        
+        public ws_envio_xml_tropiResponseBody(string ws_envio_xml_tropiResult) {
+            this.ws_envio_xml_tropiResult = ws_envio_xml_tropiResult;
         }
     }
     
@@ -252,6 +332,86 @@ namespace Modular.ServiceBata {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class ws_genera_pdf_bytesRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="ws_genera_pdf_bytes", Namespace="http://tempuri.org/", Order=0)]
+        public Modular.ServiceBata.ws_genera_pdf_bytesRequestBody Body;
+        
+        public ws_genera_pdf_bytesRequest() {
+        }
+        
+        public ws_genera_pdf_bytesRequest(Modular.ServiceBata.ws_genera_pdf_bytesRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class ws_genera_pdf_bytesRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string _tipo;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public string _serie;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public string _num_ini;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
+        public string _num_fin;
+        
+        public ws_genera_pdf_bytesRequestBody() {
+        }
+        
+        public ws_genera_pdf_bytesRequestBody(string _tipo, string _serie, string _num_ini, string _num_fin) {
+            this._tipo = _tipo;
+            this._serie = _serie;
+            this._num_ini = _num_ini;
+            this._num_fin = _num_fin;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class ws_genera_pdf_bytesResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="ws_genera_pdf_bytesResponse", Namespace="http://tempuri.org/", Order=0)]
+        public Modular.ServiceBata.ws_genera_pdf_bytesResponseBody Body;
+        
+        public ws_genera_pdf_bytesResponse() {
+        }
+        
+        public ws_genera_pdf_bytesResponse(Modular.ServiceBata.ws_genera_pdf_bytesResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class ws_genera_pdf_bytesResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public byte[] ws_genera_pdf_bytesResult;
+        
+        public ws_genera_pdf_bytesResponseBody() {
+        }
+        
+        public ws_genera_pdf_bytesResponseBody(byte[] ws_genera_pdf_bytesResult) {
+            this.ws_genera_pdf_bytesResult = ws_genera_pdf_bytesResult;
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public interface ws_bataSoapChannel : Modular.ServiceBata.ws_bataSoap, System.ServiceModel.IClientChannel {
     }
@@ -294,6 +454,20 @@ namespace Modular.ServiceBata {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Modular.ServiceBata.ws_envio_xml_tropiResponse Modular.ServiceBata.ws_bataSoap.ws_envio_xml_tropi(Modular.ServiceBata.ws_envio_xml_tropiRequest request) {
+            return base.Channel.ws_envio_xml_tropi(request);
+        }
+        
+        public string ws_envio_xml_tropi(byte[] _archivo_xml, string _name) {
+            Modular.ServiceBata.ws_envio_xml_tropiRequest inValue = new Modular.ServiceBata.ws_envio_xml_tropiRequest();
+            inValue.Body = new Modular.ServiceBata.ws_envio_xml_tropiRequestBody();
+            inValue.Body._archivo_xml = _archivo_xml;
+            inValue.Body._name = _name;
+            Modular.ServiceBata.ws_envio_xml_tropiResponse retVal = ((Modular.ServiceBata.ws_bataSoap)(this)).ws_envio_xml_tropi(inValue);
+            return retVal.Body.ws_envio_xml_tropiResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         Modular.ServiceBata.ws_envio_xmlResponse Modular.ServiceBata.ws_bataSoap.ws_envio_xml(Modular.ServiceBata.ws_envio_xmlRequest request) {
             return base.Channel.ws_envio_xml(request);
         }
@@ -321,6 +495,22 @@ namespace Modular.ServiceBata {
             inValue.Body._error = _error;
             Modular.ServiceBata.ws_control_errorResponse retVal = ((Modular.ServiceBata.ws_bataSoap)(this)).ws_control_error(inValue);
             return retVal.Body.ws_control_errorResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Modular.ServiceBata.ws_genera_pdf_bytesResponse Modular.ServiceBata.ws_bataSoap.ws_genera_pdf_bytes(Modular.ServiceBata.ws_genera_pdf_bytesRequest request) {
+            return base.Channel.ws_genera_pdf_bytes(request);
+        }
+        
+        public byte[] ws_genera_pdf_bytes(string _tipo, string _serie, string _num_ini, string _num_fin) {
+            Modular.ServiceBata.ws_genera_pdf_bytesRequest inValue = new Modular.ServiceBata.ws_genera_pdf_bytesRequest();
+            inValue.Body = new Modular.ServiceBata.ws_genera_pdf_bytesRequestBody();
+            inValue.Body._tipo = _tipo;
+            inValue.Body._serie = _serie;
+            inValue.Body._num_ini = _num_ini;
+            inValue.Body._num_fin = _num_fin;
+            Modular.ServiceBata.ws_genera_pdf_bytesResponse retVal = ((Modular.ServiceBata.ws_bataSoap)(this)).ws_genera_pdf_bytes(inValue);
+            return retVal.Body.ws_genera_pdf_bytesResult;
         }
     }
 }

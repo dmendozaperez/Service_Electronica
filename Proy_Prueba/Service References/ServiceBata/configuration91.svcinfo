@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="/bv1xPPt96CK1zTfVG29UfUPF4c=">
+<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="qu7qTFA5meGt0ZlgLd2zb77uICg=">
   <bindingConfigurations>
     <bindingConfiguration bindingType="basicHttpBinding" name="ws_bataSoap">
       <properties>
@@ -112,10 +112,10 @@
     </bindingConfiguration>
   </bindingConfigurations>
   <endpoints>
-    <endpoint name="ws_bataSoap" contract="ServiceBata.ws_bataSoap" bindingType="basicHttpBinding" address="http://10.10.10.208/web_site_electronica/ws_bata.asmx" bindingConfiguration="ws_bataSoap">
+    <endpoint name="ws_bataSoap" contract="ServiceBata.ws_bataSoap" bindingType="basicHttpBinding" address="http://posperu.bgr.pe/web_site_electronica/ws_bata.asmx" bindingConfiguration="ws_bataSoap">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>http://10.10.10.208/web_site_electronica/ws_bata.asmx</serializedValue>
+          <serializedValue>http://posperu.bgr.pe/web_site_electronica/ws_bata.asmx</serializedValue>
         </property>
         <property path="/behaviorConfiguration" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />

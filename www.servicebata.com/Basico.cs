@@ -23,7 +23,7 @@ namespace www.servicebata.com
         }
         private static string conexion_carvajal
         {
-            get { return "Server=10.10.10.28;Database=FEPE_SC;User ID=dmendoza;Password=Bata2013;Trusted_Connection=False;"; }
+            get { return "Server=170.231.82.182;Database=FEPE_SC;User ID=dmendoza;Password=Bata2013;Trusted_Connection=False;"; }
         }
 
         private static DataTable _retorna_ruta_tda()
@@ -235,8 +235,9 @@ namespace www.servicebata.com
                         string _ruta_carpeta = dt_ruta.Rows[i]["ruta_xml"].ToString() + "\\";
                         //        //creando la carpeta de la tienda                    
 
-                        NetworkShare.ConnectToShare(@dt_ruta.Rows[i]["ruta_xml"].ToString(), _user, _contraseña);
+                        //NetworkShare.ConnectToShare(@dt_ruta.Rows[i]["ruta_xml"].ToString(), _user, _contraseña);
 
+                        if (!Directory.Exists(@_ruta_carpeta)) Directory.CreateDirectory(@_ruta_carpeta);
 
                         _archivo_ruta = _ruta_carpeta + "\\" + _tienda_archivo + ".xml";
 
@@ -308,6 +309,8 @@ namespace www.servicebata.com
                         //        //creando la carpeta de la tienda                    
 
                         NetworkShare.ConnectToShare(@dt_ruta.Rows[i]["rut_des"].ToString() + "\\", _user, _contraseña);
+
+                        if (!Directory.Exists(@_ruta_carpeta)) Directory.CreateDirectory(@_ruta_carpeta);
 
 
                         _archivo_ruta = _ruta_carpeta + "\\" + _tienda_archivo + ".xml";

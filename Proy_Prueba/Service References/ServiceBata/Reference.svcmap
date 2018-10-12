@@ -18,11 +18,11 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://10.10.10.208/web_site_electronica/ws_bata.asmx" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://posperu.bgr.pe/web_site_electronica/ws_bata.asmx" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="ws_bata1.disco" MetadataType="Disco" ID="24670035-6be0-4ba9-9a2a-47da3eacfd0b" SourceId="1" SourceUrl="http://10.10.10.208/web_site_electronica/ws_bata.asmx?disco" />
-    <MetadataFile FileName="ws_bata1.wsdl" MetadataType="Wsdl" ID="0299b33e-72c9-4843-b13c-baa3194bfaf4" SourceId="1" SourceUrl="http://10.10.10.208/web_site_electronica/ws_bata.asmx?wsdl" />
+    <MetadataFile FileName="ws_bata1.wsdl" MetadataType="Wsdl" ID="a121e5a0-fc80-4e64-b33c-a0e321f0ea30" SourceId="1" SourceUrl="http://posperu.bgr.pe/web_site_electronica/ws_bata.asmx?wsdl" />
+    <MetadataFile FileName="ws_bata1.disco" MetadataType="Disco" ID="f0e3d0b5-3cdc-443a-b50b-9de764ae01b5" SourceId="1" SourceUrl="http://posperu.bgr.pe/web_site_electronica/ws_bata.asmx?disco" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

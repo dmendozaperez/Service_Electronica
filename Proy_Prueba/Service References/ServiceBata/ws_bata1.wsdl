@@ -233,10 +233,10 @@
   </wsdl:binding>
   <wsdl:service name="ws_bata">
     <wsdl:port name="ws_bataSoap" binding="tns:ws_bataSoap">
-      <soap:address location="http://10.10.10.208/web_site_electronica/ws_bata.asmx" />
+      <soap:address location="http://posperu.bgr.pe/web_site_electronica/ws_bata.asmx" />
     </wsdl:port>
     <wsdl:port name="ws_bataSoap12" binding="tns:ws_bataSoap12">
-      <soap12:address location="http://10.10.10.208/web_site_electronica/ws_bata.asmx" />
+      <soap12:address location="http://posperu.bgr.pe/web_site_electronica/ws_bata.asmx" />
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>
